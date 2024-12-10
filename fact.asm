@@ -1,3 +1,4 @@
+;Compute Factorial
 .ORIG X3000
 MAIN    LD R0, INPUT      ; Load input value into R0
         JSR FACTORIAL     ; Call factorial subroutine
@@ -25,5 +26,5 @@ DONE_FACT
         ADD R0, R1, #0    ; Move result back to R0
         RET               ; Return
 
-INPUT   .FILL #5          
+INPUT   .FILL #5          ; Input
         .END
